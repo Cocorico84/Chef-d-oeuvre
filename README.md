@@ -2,7 +2,7 @@
 
 Dans le cadre de la formation Datartisan, une validation des compétences est nécessaire sous la formae d'un chef d'oeuvre. Ce chef d'oeuvre est un projet qui doit contenir toutes les compétences nécessaire à la validation des acquis.
 
-**Nom du projet** : Chef d'oeuvre
+**Nom du projet** : Mais t'es haut ?
 
 **Auteur et copyright** : Corentin Zheng / Romain Delouvrier
 
