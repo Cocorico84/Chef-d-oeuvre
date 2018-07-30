@@ -8,10 +8,12 @@ CREATE TABLE habits
 	marque VARCHAR(50),
 	prix INT,
 	lien VARCHAR(150)
-)
+);
 
 CREATE TABLE pays;
 (
 	id_pays INT PRIMARY KEY,
 	nom VARCHAR(50)
-)
+);
+
+--CREATE INDEX 
