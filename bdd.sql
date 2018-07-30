@@ -16,4 +16,4 @@ CREATE TABLE pays;
 	nom VARCHAR(50)
 );
 
---CREATE INDEX 
+CREATE UNIQUE INDEX pays_index ON pays (id_pays,nom);
