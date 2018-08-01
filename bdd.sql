@@ -1,16 +1,17 @@
-CREATE DATABASE oeuvre;
+CREATE DATABASE chef;
 
-CREATE TABLE habits
+CREATE TABLE Vetement
 (
-	id_habits INT PRIMARY KEY,
-	type VARCHAR(50),
-	sexe VARCHAR(2),
-	marque VARCHAR(50),
-	prix INT,
-	lien VARCHAR(150)
+	id_vetement INT PRIMARY KEY,
+	marque VARCHAR(30),
+	description VARCHAR(200),
+	lien VARCHAR(100),
+	prix VARCHAR(10),
+	genre VARCHAR(1),
+	temperature INT
 );
 
-CREATE TABLE pays;
+CREATE TABLE Pays
 (
 	id_pays INT PRIMARY KEY,
 	nom VARCHAR(50)
