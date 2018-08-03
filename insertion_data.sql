@@ -1,23 +1,3 @@
-CREATE DATABASE chef;
-
-USE chef;
-
-CREATE TABLE Vetement
-(
-	marque VARCHAR(50),
-	description VARCHAR(200),
-	lien VARCHAR(300),
-	prix FLOAT(10),
-	genre VARCHAR(1),
-	temperature INT
-);
-
-CREATE TABLE Pays
-(
-	id_pays VARCHAR(50) PRIMARY KEY,
-	nom VARCHAR(50)
-);
-
 INSERT INTO Pays (id_pays, nom)
 VALUES
 ('Afghanistan', 'AF'),
