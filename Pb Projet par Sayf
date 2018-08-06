@@ -1,0 +1,47 @@
+Pb Projet:
+- Soit supp les Users (parcq tu n'as pas le temps de le faire): du coup le Visitor vient sur le site consulte la météo, vs lui proposer des fringues et il quitte le site. 
+- Soit voir plus large le projet : le user saisie sa localisation (par ex partir au bureau pr savoir mettre si je mets un manteau ou non) ou sa destination (partir en voyage ds 5 jours : dc prévision météo du 5è jour et anticiper l'achat de vetements que vs lui proposer).
+
+Conséquence:
+- Revoir le diagramme des classes (UML) => p.ê supp les Users?
+- Fonctionnalités : Le visitor precise sa localisation et la date (date_prev_meteo)! 
+
+- Rédiger un User Stories: 
+	En tant que Visitor,je me connecte
+	En tant que Visitor,je consulte
+	...
+
+- Faire un vrai diagramme des classes en UML (le mettre aussi sur le drive)?
+- Améliorer le script de création de bdd : if not exists, moteur innoDB (pr les tables),... ?
+- C quoi la diff entre innoDB et MyIsam (comme moteur de DB)?
+- Produire le script de données (remplissage de la DB)?
+- Diagramme des classes : harmoniser le use case et la bdd (Regle: ce qui est ds le DC est à développer, ce qui n'y est pas n'est pas à développer) !
+
+Pb avec la Table pays : 
+- PK varchar(50) ce n'est pas bon, il te faut moins (2)
+- Remplissage de la table pays : expliquer ta démarche ds le slide de la présentation (source les données : atlas monde, sql.sh mais p.ê moins à jour)
+- Optionnel : p.ê ajouter une colonne Langue.
+
+
+Pb avec la Table donnee : 
+- Changer le nom de la table (donnee => user_data)
+- Affecter un meilleur type de PK : int(11) => int(7).
+- FK : id_ville (alorq ds la DB ça n'a pas l'air d'être ça : id_bfk_1 ????)
+- changer le nom de la col insert_date : date_prev_meteo (il faut expliquer qu'on ne peut pas aller plus loin que 5jours).
+- renommer en table meteo
+
+Table meteo(id_ville'FK',date_prev_meteo,'FK, temp,rain)
+
+Table Vetement :
+- ajouter une PK
+- ajouter une contrainte
+- colonne genre : 3 valeurs (f,h,p) ne veut rien dire. Changer 
+lien parapluie homme : https://www.galerieslafayette.com/s/homme+accessoires+parapluies/ct/homme-accessoires-parapluies
+lien parapluie femme : https://www.galerieslafayette.com/s/femme+accessoires+parapluies/ct/femme-accessoires-parapluies
+
+Ajouter une table marque : car il y a des relations one-to-many entre marque et vetement.
+mettre une contrainte d'unicité sur le nom de la marque
+Un index sur le nom des marques : https://openclassrooms.com/fr/courses/1959476-administrez-vos-bases-de-donnees-avec-mysql/1965474-violation-de-contrainte-dunicite
+
+
+
