@@ -1,4 +1,4 @@
-INSERT INTO Pays (id_pays, nom)
+INSERT INTO Pays (nom, id_pays)
 VALUES
 ('Afghanistan', 'AF'),
 ('Îles Åland', 'AX'),
@@ -248,78 +248,77 @@ VALUES
 ('Zimbabwe', 'ZW');
 
 # T shirt homme
-INSERT INTO Vetement (marque, description, lien, prix, genre, temperature)
+INSERT INTO Vetement (marque,description, lien, prix, genre, item)
 VALUES
-('Eden Park', 'T-shirt droit uni col V', 'https://www.galerieslafayette.com/p/t-shirt+droit+uni+col+v-eden+park/33707270/125', 45.00, 'h', 2),
-('Calvin Klein', 'T-shirt Tronic', 'https://www.galerieslafayette.com/p/t-shirt+tronic-calvin+klein/48571349/320', 27.50, 'h', 2),
-('Replay', 'T-shirt droit en coton uni', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+coton+uni-replay/54482861/140', 35.00, 'h', 2),
-('Calvin Klein', 'T-shirt en coton uni slim fit', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+uni+slim+fit-calvin+klein/50689031/320', 22.50, 'h', 2),
-('Polo Ralph Lauren', 'T-shirt uni à col V custom slim fit', 'https://www.galerieslafayette.com/p/t-shirt+uni+a+col+v+custom+slim+fit-polo+ralph+lauren/54492014/125', 59.00, 'h', 2),
-('Polo Ralph Lauren', 'T-shirt en coton custom slim fit', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+custom+slim+fit-polo+ralph+lauren/55252268/101', 59.00, 'h', 2),
-('Polo Ralph Lauren', 'T-shirt chiné', 'https://www.galerieslafayette.com/p/t-shirt+chine-polo+ralph+lauren/55252248/125', 59.00, 'h', 2),
-('Calvin Klein', 'T-shirt en coton uni slim fit', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+uni+slim+fit-calvin+klein/50689031/125', 22.50, 'h', 2),
-('Eden Park', 'T-shirt droit uni col V', 'https://www.galerieslafayette.com/p/t-shirt+droit+uni+col+v-eden+park/33602813/385', 45.00, 'h', 2),
-('Polo Ralph Lauren', 'T-shirt en coton logo', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+logo-polo+ralph+lauren/49889659/103', 41.30, 'h', 2),
-('Polo Ralph Lauren', 'T-shirt en coton flammé à col V custom slim fit', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+flamme+a+col+v+custom+slim+fit-polo+ralph+lauren/49889713/119', 41.30, 'h', 2),
-('Polo Ralph Lauren', 'T-shirt à rayures contrastantes custom fit', 'https://www.galerieslafayette.com/p/t-shirt+a+rayures+contrastantes+custom+fit-polo+ralph+lauren/49889719/101', 41.30, 'h', 2),
-('Calvin Klein', 'T-shirt en coton à message', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+a+message-calvin+klein/50068545/320', 20.00, 'h', 2),
-('G-Star', 'T-shirt Zost', 'https://www.galerieslafayette.com/p/t-shirt+zost-g-star/50069280/263', 19.96, 'h', 2),
-('Galeries Lafayette', 'T-shirt Mishev', 'https://www.galerieslafayette.com/p/t-shirt+mishev-galeries+lafayette/48362519/320', 7.49, 'h', 2),
-('Replay', 'T-shirt droit en coton uni', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+coton+uni-replay/54482868/125', 35.00, 'h', 2),
-('The Kooples', 'T-shirt avec collier chaînette amovible à pendentif tête de mort', 'https://www.galerieslafayette.com/p/t-shirt+avec+collier+chainette+amovible+a+pendentif+tete+de+mort-the+kooples/49994548/85', 34.00, 'h', 2),
-('Polo Ralph Lauren', 'T-shirt print paysages en all over custom slim fit', 'https://www.galerieslafayette.com/p/t-shirt+print+paysages+en+all+over+custom+slim+fit-polo+ralph+lauren/49889779/2895', 34.50, 'h', 2),
-('Ikks', 'T-shirt rayé à col tunisien et manches longues', 'https://www.galerieslafayette.com/p/t-shirt+raye+a+col+tunisien+et+manches+longues-ikks/50030585/99', 34.00, 'h', 2),
-('Schott', 'T-shirt Schott', 'https://www.galerieslafayette.com/p/t-shirt+schott-schott/300404392427/92', 30.00, 'h', 2),
-('Galeries Lafayette', 'T-shirt Tishron', 'https://www.galerieslafayette.com/p/t-shirt+tishron-galeries+lafayette/52564413/85', 14.99, 'h', 2),
-('Harris Wilson', 'T-shirt Kome', 'https://www.galerieslafayette.com/p/t-shirt+kome-harris+wilson/50677497/206', 29.40, 'h', 2),
-('Marciano Guess', 'T-SHIRT MARCIANO LOGO', 'https://www.galerieslafayette.com/p/t-shirt+marciano+logo-marciano+guess/300405169361/85', 29.00, 'h', 2),
-('Guess', 'T-SHIRT LOGO TRIANGLE', 'https://www.galerieslafayette.com/p/t-shirt+logo+triangle-guess/300404195670/230', 29.90, 'h', 2),
-('LeviS', 'T-shirt Housemark Retro ', 'https://www.galerieslafayette.com/p/t-shirt+housemark+retro-levi+s/54335746/125', 29.00, 'h', 2),
-('Timberland', 'T-shirt col V', 'https://www.galerieslafayette.com/p/t-shirt+col+v-timberland/50322516/85', 29.00, 'h', 2),
-('Armani Exchange', 'T-shirt logotypé print floral loose fit', 'https://www.galerieslafayette.com/p/t-shirt+logotype+print+floral+loose+fit-armani+exchange/50589543/125', 29.50, 'h', 2),
-('Harris Wilson', 'T-shirt Kristian', 'https://www.galerieslafayette.com/p/t-shirt+kristian-harris+wilson/50677565/125', 27.00, 'h', 2),
-('La Compagnie du Lin', 'T-shirt droit en coton et lin à col V', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+coton+et+lin+a+col+v-la+compagnie+du+lin/53979666/410', 27.30, 'h', 2),
-('Calvin Klein', 'T-shirt sérigraphié ', 'https://www.galerieslafayette.com/p/t-shirt+serigraphie-calvin+klein/50068552/498', 27.50, 'h', 2),
-('Marc O’Polo', 'T-shirt droit en coton flammé', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+coton+flamme-marc+o+polo/53372816/85', 26.96, 'h', 2),
-('Tommy Hilfiger', 'T-shirt en coton uni à flocage contrastant', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+uni+a+flocage+contrastant-tommy+hilfiger/50597051/263', 25.20, 'h', 2),
-('Redskins', 'T-shirt Wire Calder', 'https://www.galerieslafayette.com/p/t-shirt+wire+calder-redskins/51216391/125', 24.50, 'h', 2),
-('Michael Kors', 'T-shirt en coton marinière', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+mariniere-michael+kors/49543802/88', 24.50, 'h', 2),
-('Calvin Klein', 'T-shirt à rectangle contrastant siglé', 'https://www.galerieslafayette.com/p/t-shirt+a+rectangle+contrastant+sigle-calvin+klein/50689057/230', 24.50, 'h', 2),
-('Calvin Klein', 'T-shirt à lettrage en velours slim fit', 'https://www.galerieslafayette.com/p/t-shirt+a+lettrage+en+velours+slim+fit-calvin+klein/50689085/85', 24.50, 'h', 2),
-('Guess', 'POLO MANCHE LONGUE', 'https://www.galerieslafayette.com/p/polo+manche+longue-guess/300404156025/320', 24.50, 'h', 2),
-('Marc O’Polo', 'T-shirt en coton uni shaped fit', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+uni+shaped+fit-marc+o+polo/53372803/204', 23.96, 'h', 2),
-('Scotch And Soda', 'T-shirt droit Capsule Felix le Chat', 'https://www.galerieslafayette.com/p/t-shirt+droit+capsule+felix+le+chat-scotch+and+soda/49386524/384', 22.50, 'h', 2),
-('Napapijri', 'T-shirt Sancy', 'https://www.galerieslafayette.com/p/t-shirt+sancy-napapijri/49520876/104', 22.00, 'h', 2),
-('Calvin Klein', 'T-shirt Boros', 'https://www.galerieslafayette.com/p/t-shirt+boros-calvin+klein/50068657/320', 22.50, 'h', 2),
-('Calvin Klein', 'T-shirt en coton uni slim fit', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+uni+slim+fit-calvin+klein/50689031/85', 22.50, 'h', 2),
-('Guess', 'T-SHIRT BOUTONS MICRO-MOTIF', 'https://www.galerieslafayette.com/p/t-shirt+boutons+micro-motif-guess/300404453218/101', 22.50, 'h', 2),
-('Napapijri', 'T-shirt Sancy', 'https://www.galerieslafayette.com/p/t-shirt+sancy-napapijri/49520876/356', 22.00, 'h', 2),
-('LeviS', 'T-shirt en coton logotypé', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+logotype-levi+s/37375644/85', 20.00, 'h', 2),
-('Kaporal Jeans', 'T-shirt Loris', 'https://www.galerieslafayette.com/p/t-shirt+loris-kaporal+jeans/49900099/263', 19.50, 'h', 2),
-('Guess', 'T-SHIRT COL EN V POCHE DE POITRINE', 'https://www.galerieslafayette.com/p/t-shirt+col+en+v+poche+de+poitrine-guess/300404898171/453', 19.50, 'h', 2),
-('Guess', 'T-SHIRT IMPRIME FRONTAL', 'https://www.galerieslafayette.com/p/t-shirt+imprime+frontal-guess/300404898161/320', 19.50, 'h', 2),
-('Diesel', 'T-shirt T-Diego', 'https://www.galerieslafayette.com/p/t-shirt+t-diego-diesel/48812211/85', 19.50, 'h', 2),
-('Guess', 'T-SHIRT LOGO RELIEF PALMIER', 'https://www.galerieslafayette.com/p/t-shirt+logo+relief+palmier-guess/300405178594/101', 18.00, 'h', 2),
-('Chevignon', 'Tee Shirt Ml Straight Col Tunisien', 'https://www.galerieslafayette.com/p/tee+shirt+ml+straight+col+tunisien-chevignon/300404372475/320', 18.00, 'h', 2),
-('Petrol Industries', 'T-shirt aspect vintage motif fantaisie', 'https://www.galerieslafayette.com/p/t-shirt+aspect+vintage+motif+fantaisie-petrol+industries/49389796/131', 17.46, 'h', 2),
-('Teddy Smith', 'T-shirt Ticlass', 'https://www.galerieslafayette.com/p/t-shirt+ticlass-teddy+smith/49291780/401', 17.50, 'h', 2),
-('Teddy Smith', 'T-shirt Ticlass', 'https://www.galerieslafayette.com/p/t-shirt+ticlass-teddy+smith/49291780/99', 17.50, 'h', 2),
-('Kaporal Jeans', 'T-shirt Habot', 'https://www.galerieslafayette.com/p/t-shirt+habot-kaporal+jeans/49900035/125', 17.50, 'h', 2),
-('Pepe Jeans', 'T-shirt Afremov', 'https://www.galerieslafayette.com/p/t-shirt+afremov-pepe+jeans/48934437/263', 17.50, 'h', 2),
-('Sisley', 'T-shirt manches longues en coton flammé', 'https://www.galerieslafayette.com/p/t-shirt+manches+longues+en+coton+flamme-sisley/51314944/125', 17.40, 'h', 2),
-('Sisley', 'T-shirt droit en coton flammé', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+coton+flamme-sisley/43319898/85', 17.40, 'h', 2),
-('Sisley', 'T-shirt droit en coton flammé à col tunisien', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+coton+flamme+a+col+tunisien-sisley/51314969/320', 17.40, 'h', 2),
-('G-Star', 'T-shirt Bellar', 'https://www.galerieslafayette.com/p/t-shirt+bellar-g-star/52614857/125', 17.50, 'h', 2);
+('Pepe Jeans', 'T-shirt en coton logo', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+logo-pepe+jeans/53134690/85', 14.00, 'h', 'ts'),
+('Pepe Jeans', 'T-shirt Charing', 'https://www.galerieslafayette.com/p/t-shirt+charing-pepe+jeans/49910495/320', 14.00, 'h', 'ts'),
+('Polo Ralph Lauren', 'T-shirt droit uni logotypé', 'https://www.galerieslafayette.com/p/t-shirt+droit+uni+logotype-polo+ralph+lauren/45855565/85', 59.00, 'h', 'ts'),
+('Ikks', 'T-shirt 2 en 1 à manches longues', 'https://www.galerieslafayette.com/p/t-shirt+2+en+1+a+manches+longues-ikks/50029751/206', 42.00, 'h', 'ts'),
+('Tommy Jeans', 'T-shirt en coton flammé à bandes contrastantes', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+flamme+a+bandes+contrastantes-tommy+jeans/50632478/85', 22.50, 'h', 'ts'),
+('Zadig & Voltaire', 'T-shirt en coton Toby', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+toby-zadig+voltaire/51134378/85', 63.00, 'h', 'ts'),
+('Zadig & Voltaire', 'T-shirt Hectorio', 'https://www.galerieslafayette.com/p/t-shirt+hectorio-zadig+voltaire/50818486/125', 63.00, 'h', 'ts'),
+('LeviS', 'T-shirt en coton logotypé', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+logotype-levi+s/37375644/85', 20.00, 'h', 'ts'),
+('Zadig & Voltaire', 'Polo manches courtes Totem', 'https://www.galerieslafayette.com/p/polo+manches+courtes+totem-zadig+voltaire/50818519/125', 60.00, 'h', 'ts'),
+('Polo Ralph Lauren', 'T-shirt logotypé en coton', 'https://www.galerieslafayette.com/p/t-shirt+logotype+en+coton-polo+ralph+lauren/45855572/125', 59.00, 'h', 'ts'),
+('Polo Ralph Lauren', 'T-shirt effet chiné custom fit', 'https://www.galerieslafayette.com/p/t-shirt+effet+chine+custom+fit-polo+ralph+lauren/48928786/320', 59.00, 'h', 'ts'),
+('Sandro', 'T-shirt rayé lin', 'https://www.galerieslafayette.com/p/t-shirt+raye+lin-sandro/49830202/88', 59.50, 'h', 'ts'),
+('Lacoste', 'T-shirt en coton pima uni', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+pima+uni-lacoste/46021332/125', 55.00, 'h', 'ts'),
+('Guess', 'T-SHIRT BOUTONS MICRO-MOTIF', 'https://www.galerieslafayette.com/p/t-shirt+boutons+micro-motif-guess/300404453218/85', 18.00, 'h', 'ts'),
+('Polo Ralph Lauren', 'T-shirt à col tunisien print 67', 'https://www.galerieslafayette.com/p/t-shirt+a+col+tunisien+print+67-polo+ralph+lauren/49845896/106', 52.50, 'h', 'ts'),
+('Sandro', 'T-shirt droit en lin', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+lin-sandro/11393979/457', 52.50, 'h', 'ts'),
+('Calvin Klein', 'T-shirt en coton print contrastant rectangle 1978 ', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+print+contrastant+rectangle+1978-calvin+klein/50068651/320', 24.50, 'h', 'ts'),
+('Michael Kors', 'T-shirt en jersey uni', 'https://www.galerieslafayette.com/p/t-shirt+en+jersey+uni-michael+kors/45654132/85', 49.00, 'h', 'ts'),
+('Michael Kors', 'T-shirt en jersey uni', 'https://www.galerieslafayette.com/p/t-shirt+en+jersey+uni-michael+kors/45654132/320', 49.00, 'h', 'ts'),
+('Michael Kors', 'T-shirt en jersey uni', 'https://www.galerieslafayette.com/p/t-shirt+en+jersey+uni-michael+kors/45654132/101', 49.00, 'h', 'ts'),
+('Eden Park', 'T-shirt droit uni col V', 'https://www.galerieslafayette.com/p/t-shirt+droit+uni+col+v-eden+park/33707270/125', 45.00, 'h', 'ts'),
+('Calvin Klein', 'T-shirt Boros', 'https://www.galerieslafayette.com/p/t-shirt+boros-calvin+klein/50068657/320', 22.50, 'h', 'ts'),
+('Hackett London', 'T-shirt bicolore Aston martin Racing', 'https://www.galerieslafayette.com/p/t-shirt+bicolore+aston+martin+racing-hackett+london/49304083/85', 45.50, 'h', 'ts'),
+('Armani Exchange', 'T-shirt logotypé slim fit', 'https://www.galerieslafayette.com/p/t-shirt+logotype+slim+fit-armani+exchange/54673794/125', 45.00, 'h', 'ts'),
+('Lacoste', 'T-shirt droit en jersey et coton piqué', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+jersey+et+coton+pique-lacoste/49796389/401', 45.50, 'h', 'ts'),
+('Lacoste', 'T-shirt droit à fines rayures contrastantes', 'https://www.galerieslafayette.com/p/t-shirt+droit+a+fines+rayures+contrastantes-lacoste/49796423/101', 42.00, 'h', 'ts'),
+('Lacoste', 'T-shirt droit en coton piqué logo brodé', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+coton+pique+logo+brode-lacoste/49796407/401', 42.00, 'h', 'ts'),
+('Ikks', 'T-shirt 2 en 1 à manches longues', 'https://www.galerieslafayette.com/p/t-shirt+2+en+1+a+manches+longues-ikks/50029751/263', 42.00, 'h', 'ts'),
+('Guess', 'T-SHIRT MOTIF PALMIERS', 'https://www.galerieslafayette.com/p/t-shirt+motif+palmiers-guess/300405208436/101', 19.50, 'h', 'ts'),
+('Guess', 'T-SHIRT LOGO FRONTAL', 'https://www.galerieslafayette.com/p/t-shirt+logo+frontal-guess/300405213103/230', 39.90, 'h', 'ts'),
+('Napapijri', 'T-shirt Sandy', 'https://www.galerieslafayette.com/p/t-shirt+sandy-napapijri/49520849/232', 37.00, 'h', 'ts'),
+('Tommy Jeans', 'T-shirt en coton flammé logotypé', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+flamme+logotype-tommy+jeans/50632492/401', 17.50, 'h', 'ts'),
+('Calvin Klein', 'T-shirt droit en coton à poche poitrine logotypée', 'https://www.galerieslafayette.com/p/t-shirt+droit+en+coton+a+poche+poitrine+logotypee-calvin+klein/53896626/125', 35.00, 'h', 'ts'),
+('Scotch And Soda', 'T-shirt droit print fantaisie', 'https://www.galerieslafayette.com/p/t-shirt+droit+print+fantaisie-scotch+and+soda/49749349/204', 34.50, 'h', 'ts'),
+('Polo Ralph Lauren', 'T-shirt en tissu technique logotypé à imprimé camouflage', 'https://www.galerieslafayette.com/p/t-shirt+en+tissu+technique+logotype+a+imprime+camouflage-polo+ralph+lauren/49845129/119', 34.50, 'h', 'ts'),
+('Mise Au Green', 'T-shirt Image', 'https://www.galerieslafayette.com/p/t-shirt+image-mise+au+green/51381380/85', 34.00, 'h', 'ts'),
+('Chevignon', 'Tee Shirt Mc Straight Impimé', 'https://www.galerieslafayette.com/p/tee+shirt+mc+straight+impime-chevignon/300404346053/233', 31.50, 'h', 'ts'),
+('Kaporal Jeans', 'T-shirt Twik', 'https://www.galerieslafayette.com/p/t-shirt+twik-kaporal+jeans/49900134/320', 15.00, 'h', 'ts'),
+('Guess', 'T-SHIRT LOGO TRIANGLE', 'https://www.galerieslafayette.com/p/t-shirt+logo+triangle-guess/300404972179/85', 29.90, 'h', 'ts'),
+('Galeries Lafayette', 'T-shirt Tishron', 'https://www.galerieslafayette.com/p/t-shirt+tishron-galeries+lafayette/52564413/85', 14.99, 'h', 'ts'),
+('Kaporal Jeans', 'T-shirt foot Espagne ', 'https://www.galerieslafayette.com/p/t-shirt+foot+espagne-kaporal+jeans/54693935/401', 29.00, 'h', 'ts'),
+('Carhartt Wip', 'T-shirt droit uni poche poitrine siglée', 'https://www.galerieslafayette.com/p/t-shirt+droit+uni+poche+poitrine+siglee-carhartt+wip/54815145/85', 29.00, 'h', 'ts'),
+('Marciano Guess', 'T-SHIRT MARCIANO LOGO', 'https://www.galerieslafayette.com/p/t-shirt+marciano+logo-marciano+guess/300405169361/85', 29.00, 'h', 'ts'),
+('Galeries Lafayette', 'T-shirt Tishve', 'https://www.galerieslafayette.com/p/t-shirt+tishve-galeries+lafayette/52564368/125', 14.99, 'h', 'ts'),
+('Marciano Guess', 'T-SHIRT MARCIANO LOGO', 'https://www.galerieslafayette.com/p/t-shirt+marciano+logo-marciano+guess/300404422573/230', 29.50, 'h', 'ts'),
+('Teddy Smith', 'T-shirt Twiga', 'https://www.galerieslafayette.com/p/t-shirt+twiga-teddy+smith/49291856/233', 14.50, 'h', 'ts'),
+('Scotch And Soda', 'T-shirt droit print timbre', 'https://www.galerieslafayette.com/p/t-shirt+droit+print+timbre-scotch+and+soda/49386270/306', 28.00, 'h', 'ts'),
+('Calvin Klein', 'T-shirt Tanav', 'https://www.galerieslafayette.com/p/t-shirt+tanav-calvin+klein/50068558/101', 27.50, 'h', 'ts'),
+('Jack & Jones', 'T-shirt Jed Premium By Jack & Jones', 'https://www.galerieslafayette.com/p/t-shirt+jed+premium+by+jack+jones-jack+jones/49891349/88', 13.99, 'h', 'ts'),
+('Tommy Hilfiger', 'T-shirt en coton uni à flocage contrastant', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+uni+a+flocage+contrastant-tommy+hilfiger/50597051/256', 25.20, 'h', 'ts'),
+('LeviS', 'T-shirt Baseball', 'https://www.galerieslafayette.com/p/t-shirt+baseball-levi+s/37718959/88', 24.50, 'h', 'ts'),
+('Galeries Lafayette', 'T-shirt Mishlin', 'https://www.galerieslafayette.com/p/t-shirt+mishlin-galeries+lafayette/49736597/263', 24.99, 'h', 'ts'),
+('Calvin Klein', 'T-shirt à lettrage en velours slim fit', 'https://www.galerieslafayette.com/p/t-shirt+a+lettrage+en+velours+slim+fit-calvin+klein/50689085/125', 24.50, 'h', 'ts'),
+('One Step', 'T-shirt en coton à larges rayures regular', 'https://www.galerieslafayette.com/p/t-shirt+en+coton+a+larges+rayures+regular-one+step/50731703/235', 24.00, 'h', 'ts'),
+('Calvin Klein', 'T-shirt logotypé à manches longues', 'https://www.galerieslafayette.com/p/t-shirt+logotype+a+manches+longues-calvin+klein/50068664/320', 24.50, 'h', 'ts'),
+('Galeries Lafayette', 'T-shirt Mishlin', 'https://www.galerieslafayette.com/p/t-shirt+mishlin-galeries+lafayette/49736597/101', 24.99, 'h', 'ts'),
+('Kaporal Jeans', 'T-shirt Halir', 'https://www.galerieslafayette.com/p/t-shirt+halir-kaporal+jeans/49900041/104', 23.40, 'h', 'ts'),
+('Element', 'T-shirt label sur la poche', 'https://www.galerieslafayette.com/p/t-shirt+label+sur+la+poche-element/54702148/140', 22.50, 'h', 'ts'),
+('One Step', 'T-shirt print motifs géométriques slim fit', 'https://www.galerieslafayette.com/p/t-shirt+print+motifs+geometriques+slim+fit-one+step/50731311/119', 22.50, 'h', 'ts');
 
 # Débardeur homme
-INSERT INTO Vetement (marque, description, lien, prix, genre, temperature)
+INSERT INTO Vetement (marque, description, lien, prix, genre, item)
 VALUES
-('Impetus', 'Débardeur en coton stretch', 'https://www.galerieslafayette.com/p/debardeur+en+coton+stretch-impetus/28038030/320', 21.90, 'h', 3),
-('Satisfy', 'Débardeur de running ajouré print homme', 'https://www.galerieslafayette.com/p/debardeur+de+running+ajoure+print+homme-satisfy/49226029/85', 60.00, 'h', 3),
-('Scotch And Soda', 'Débardeur droit uni en coton', 'https://www.galerieslafayette.com/p/debardeur+droit+uni+en+coton-scotch+and+soda/49749589/320', 17.50, 'h', 3),
-('Guy De Berac', 'Débardeur droit sans manche en laine', 'https://www.galerieslafayette.com/p/debardeur+droit+sans+manche+en+laine-guy+de+berac/33937046/2917', 85.00, 'h', 3),
-('Satisfy', 'Débardeur de running en nylon ajouré', 'https://www.galerieslafayette.com/p/debardeur+de+running+en+nylon+ajoure-satisfy/49226035/320', 60.00, 'h', 3),
-('Pull-In', 'Débardeur homme GOODBOY', 'https://www.galerieslafayette.com/p/debardeur+homme+goodboy-pull-in/300404666557/230', 17.40, 'h', 3);
+('Impetus', 'Débardeur en coton stretch', 'https://www.galerieslafayette.com/p/debardeur+en+coton+stretch-impetus/28038030/320', 21.90, 'h', 'deb'),
+('Scotch And Soda', 'Débardeur droit uni en coton', 'https://www.galerieslafayette.com/p/debardeur+droit+uni+en+coton-scotch+and+soda/49749589/320', 17.50, 'h', 'deb'),
+('Satisfy', 'Débardeur de running en nylon ajouré', 'https://www.galerieslafayette.com/p/debardeur+de+running+en+nylon+ajoure-satisfy/49226035/320', 60.00, 'h', 'deb'),
+('Guy De Berac', 'Débardeur droit sans manche en laine', 'https://www.galerieslafayette.com/p/debardeur+droit+sans+manche+en+laine-guy+de+berac/33937046/2917', 85.00, 'h', 'deb'),
+('Satisfy', 'Débardeur de running ajouré print homme', 'https://www.galerieslafayette.com/p/debardeur+de+running+ajoure+print+homme-satisfy/49226029/85', 60.00, 'h', 'deb'),
+('Pull-In', 'Débardeur homme GOODBOY', 'https://www.galerieslafayette.com/p/debardeur+homme+goodboy-pull-in/300404666557/230', 17.40, 'h', 'deb');
 
 ALTER TABLE Vetement ADD item VARCHAR(50);
 
@@ -795,4 +794,125 @@ VALUES
 ('Galeries Lafayette', 'Parapluie Auto', 'https://www.galerieslafayette.com/p/parapluie+auto-galeries+lafayette/36547658/320', 19.99, 'p', 'para'),
 ('Jean Paul Gaultier', 'Parapluie automatique pliant', 'https://www.galerieslafayette.com/p/parapluie+automatique+pliant-jean+paul+gaultier/64618531/125', 49.90, 'p', 'para'),
 ('Pierre Vaux', 'Parapluie de golf pliant automatique', 'https://www.galerieslafayette.com/p/parapluie+de+golf+pliant+automatique-pierre+vaux/96505466/320', 35.35, 'p', 'para');
+
+# Marque
+INSERT INTO Marque (marque)
+VALUES
+('Pepe Jeans'),
+('Polo Ralph Lauren'),
+('Ikks'),
+('Tommy Jeans'),
+('Zadig & Voltaire'),
+('LeviS'),
+('Sandro'),
+('Lacoste'),
+('Guess'),
+('Calvin Klein'),
+('Michael Kors'),
+('Eden Park'),
+('Hackett London'),
+('Armani Exchange'),
+('Napapijri'),
+('Scotch And Soda'),
+('Mise Au Green'),
+('Chevignon'),
+('Kaporal Jeans'),
+('Galeries Lafayette'),
+('Carhartt Wip'),
+('Marciano Guess'),
+('Teddy Smith'),
+('Jack & Jones'),
+('Tommy Hilfiger'),
+('One Step'),
+('Element'),
+('Impetus'),
+('Satisfy'),
+('Guy De Berac'),
+('Pull-In'),
+('G-Star'),
+('Vicomte A.'),
+('The Kooples'),
+('Gant'),
+('Timberland'),
+('Schott'),
+('La Compagnie du Lin'),
+('Dockers'),
+('Faguo'),
+('Agnes B.'),
+('El Ganso'),
+('Replay'),
+('Maje'),
+('Tara Jarmon'),
+('Berenice'),
+('Claudie Pierlot'),
+('Comptoir Des Cotonniers'),
+('Caroll'),
+('Balsamik'),
+('Morgan'),
+('Esprit'),
+('American Vintage'),
+('Topshop'),
+('Queen Mom'),
+('Yoga Searcher'),
+('Jodhpur'),
+('Salsa'),
+('Esprit Maternity'),
+('Nike'),
+('La Fiancée du Mekong'),
+('Lauren'),
+('Pietro Brunelli'),
+('Karl Marc John'),
+('Volcom'),
+('The Kooples Sport'),
+('Diesel'),
+('Comptoir GL'),
+('Harris Wilson'),
+('Montagut'),
+('Kitsuné'),
+('Hilfiger Denim'),
+('Le Temps Des Cerises'),
+('Promod'),
+('Marc O’Polo'),
+('Desigual'),
+('Noppies'),
+('Devernois'),
+('Princesse tam.tam'),
+('Sinequanone'),
+('(La Petite Française'),
+('(Max et Moi'),
+('Supermom'),
+('Liu Jo'),
+('Closed'),
+('Msgm'),
+('Pierre Vaux'),
+('Isotoner'),
+('Guy De Jean'),
+('Burberry'),
+('Jean Paul Gaultier');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
